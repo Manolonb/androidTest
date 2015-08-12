@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Futbol Cronometro</string>
+
+    <string name="hello_world">¡Bienvenido al Futbol en Cronometro!</string>
+    <string name="menu1">Iniciar Torneo Online</string>
+    <string name="menu2">Iniciar Partida Rápida</string>
+    <string name="menu3">Salir</string>
+    <string name="action_settings">Ajustes</string>
+
+    <!-- STRINGS PARA prueba_layout -->
+    <string name="pulsame">Cambiame la visibilidad</string>
+    <string name="mueveme">Muéveme</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

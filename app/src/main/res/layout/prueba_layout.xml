@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pulsame"
+            android:id="@+id/button4"
+            android:layout_gravity="right"
+            android:onClick="mostrarImagen"
+            android:layout_below="@+id/cabeceratextview"
+            android:layout_centerHorizontal="true" />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:max="1000"
+            android:progress="10"
+            android:indeterminate="false"
+            android:layout_marginTop="39dp"
+            android:layout_alignTop="@+id/GOLimageView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/cabeceratextview"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/GOLimageView"
+            android:src="@drawable/gol"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="visible" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mueveme"
+            android:id="@+id/muevemebutton"
+            android:onClick="moverImagen"
+            android:layout_below="@+id/cronometro"
+            android:layout_alignLeft="@+id/cronometro"
+            android:layout_alignStart="@+id/cronometro"
+            android:layout_alignRight="@+id/cronometro"
+            android:layout_alignEnd="@+id/cronometro" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ESTRELLAimageView"
+            android:src="@android:drawable/btn_star_big_on"
+            android:layout_alignBottom="@+id/GOLimageView"
+            android:layout_alignLeft="@+id/GOLimageView"
+            android:layout_alignStart="@+id/GOLimageView" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/CAMBIOimageView"
+            android:layout_below="@+id/muevemebutton"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Chronometer
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cronometro"
+            android:layout_below="@+id/button4"
+            android:layout_alignRight="@+id/button4"
+            android:layout_alignEnd="@+id/button4"
+            android:layout_alignLeft="@+id/button4"
+            android:layout_alignStart="@+id/button4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/text_prueba"
+            android:layout_below="@+id/CAMBIOimageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="39dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
